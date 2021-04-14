@@ -1,0 +1,122 @@
+<!doctype>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Die Liste</title>
+    <meta name="viewport" content="width=device-width, initioal-scale=1">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <h1>Wer zu viel Säuft</h1>
+
+    <ul id="list">
+      <meta http-equiv="refresh" content="51">
+
+    </ul>
+
+
+    
+    <script>
+      let listNames = ['Johannes'];
+      let menge = [0];
+
+      let storage = sessionStorage.getItem('menge');
+      let nameStorage = sessionStorage.getItem('name');
+
+      if (storage == null){
+        menge = [0];
+      } else {
+        menge = [0];
+        storage = storage.split(',');
+        asciToDec(storage);
+      }
+
+      if (nameStorage != null){
+        listNames = nameStorage.split(',');
+      }
+
+      updateList(menge);
+      gespWerteAuslesen();
+
+      function gespWerteAuslesen(){
+        
+      }
+
+      function asciToDec(storage){
+        for (let i = 0; i < storage.length; i += 1){
+          for (let m = 0; m < 100; m += 1){
+            if (storage[i] == m){
+              menge[i] = m;
+            }
+          }  
+        }
+      }
+
+
+      function addBeer(person){
+        menge[person] += 1;
+
+        sessionStorage.setItem('menge', menge);
+
+
+        updateList(menge);
+      }
+
+
+      function updateList(menge){
+
+        document.getElementById('list').innerHTML = ' ';
+
+        for (let index = 0; index < listNames.length; index += 1) {
+          document.getElementById('list').innerHTML += listNames[index] + ' ' + menge[index] + '   <button onclick="addBeer(' + index + ');">+</button>' + '<br><br>' + zwisch;
+        }
+        document.cookie = "menge=let zwisch = [" + menge + "]";      //+ new Date(2021, 3, 13).toUTCString()
+      }
+
+
+      function addNewName(){
+        let eingabe = window.prompt('Gib den Namen den du hinzufügen möchtest ein:');
+
+        if (eingabe != null){
+          listNames.push(eingabe);
+
+          menge.push(0);
+        }
+        sessionStorage.setItem('name', listNames);
+
+        sessionStorage.setItem('menge', menge);
+
+        updateList(menge);
+
+
+      }
+
+    </script>
+
+    <a href="index.php">Save</a>
+
+    <button onclick="addNewName()">Neuen Namen hinzufügen</button>
+
+    <br>
+    <img src="https://th.bing.com/th/id/OIP.hrdeC4kHqmT0eNtSfji2zwHaFj?w=264&h=198&c=7&o=5&dpr=1.25&pid=1.7">
+    <p></p>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <a href="https://drv.tw" target="_blank">www.drv.tw</a>
+
+  </body>
+
+</html>
+
+
+
+<!---
+ nameList.push(anzahl);
+let nameList = [];
+let anzahl = window.prompt(listNames[person] + ' gib ein wie viel Bier:');
+
+
+--->
