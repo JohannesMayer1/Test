@@ -1,1 +1,1 @@
-let zwisch = [8,4,1]
+let zwisch = [1,2,3,5]

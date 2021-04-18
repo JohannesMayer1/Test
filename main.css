@@ -6,7 +6,22 @@ body {
 
 .buttonBeer {
     background: url(RitterBlau.png);
-    width:  40px;
-    height: 134px;
+    background-size: contain;
+    width: 12px;
+    height: 40px;
     border: 0px;
+    background-repeat: no-repeat;
+    top: 14px;
+    left: 7px;
+    position: relative;
+    animation: animate 0.2s linear;
+}
+
+@keyframes animate {
+    0% {
+        
+    }
+    100% {
+        
+    }
 }
