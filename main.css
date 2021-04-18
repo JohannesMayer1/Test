@@ -1,0 +1,12 @@
+body {
+    background-color: #303030;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.buttonBeer {
+    background: url(RitterBlau.png);
+    width:  40px;
+    height: 134px;
+    border: 0px;
+}
