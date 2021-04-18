@@ -109,6 +109,8 @@
           }
         }
 
+        notFound = notFound - 1;
+
         if(anzahlLoaded == 0) {
           document.getElementById('list').innerHTML += '<meta http-equiv="refresh" content="0">';
           document.cookie = "loaded=" + laden;
