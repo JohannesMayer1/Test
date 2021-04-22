@@ -18,6 +18,13 @@ h1 {
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
+    position: relative;
+    top: 12px;
+    left: -32px;
+    border: none;
+    height: 1px;
+    width: 500px;
+    background: #606060;
 }
 
 .buttonBeer {
