@@ -8,11 +8,13 @@ body {
     font-family: sans-serif;
     font-size: 31px;
     line-height: 55px;
+    margin-top: 0px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 #list {
@@ -24,10 +26,10 @@ hr {
     margin-bottom: 0px;
     position: relative;
     top: 12px;
-    left: -48px;
+    left: -8vw;
     border: none;
     height: 1px;
-    width: 100vw;
+    width: 96vw;
     background: #606060;
 }
 
@@ -45,7 +47,17 @@ hr {
 }
 
 #AddPerson {
-    width: 10vh;
+    position: absolute;
+    width: 5vh;
+    right: 1vw;
+    top: 1vw;
+}
+
+#Beer {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    max-width: 400px;
 }
 
 

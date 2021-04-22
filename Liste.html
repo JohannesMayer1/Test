@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <img id="AddPerson" src="AddPerson.png" onclick="addNewName()">
 
     <h1>Wer zu viel Säuft</h1>
 
@@ -125,7 +126,7 @@
 
 
       function addNewName(){
-        let eingabe = window.prompt('Gib den Namen den du hinzufügen möchtest ein:');
+        let eingabe = window.prompt('Name hinzufügen');
 
 
         if (eingabe != null){
@@ -150,11 +151,7 @@
     </script>
 
     
-    <img src="Beer.png">
-
-    <br>
-    <br>
-    <button onclick="addNewName()">Neuen Namen hinzufügen</button>
+    <img id="Beer" src="Beer.png">
 
     <meta http-equiv="refresh" content="1500"> <!--Alle 25min neu Laden wegen Server-->
 
