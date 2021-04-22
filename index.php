@@ -41,11 +41,6 @@
     echo "];";
     echo "</script>";
     
-    //Ausgabe zum testen von cookie
-    echo "Cookie: ";
-    if(isset($_COOKIE["menge"])){
-    echo $_COOKIE["menge"];
-    }
 
     include_once("Liste.html");
 

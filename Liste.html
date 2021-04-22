@@ -15,8 +15,6 @@
     <ul id="list">
 
     </ul>
-
-
     
     <script>
       //let listNames = ['Johannes']; <--Wird mit php deklariert
@@ -79,7 +77,7 @@
         document.getElementById('list').innerHTML = ' ';
 
         for (let index = 0; index < listNames.length; index += 1) {
-          document.getElementById('list').innerHTML += listNames[index] + ' ' + menge[index] + '   <button onclick="addBeer(' + index + ');", class="buttonBeer"></button>' + '<br><br>';
+          document.getElementById('list').innerHTML += '<button onclick="addBeer(' + index + ');", class="buttonBeer"></button> ' + listNames[index] + ' ' + menge[index] + '<hr>';
         }
         document.cookie = "menge=let zwisch = [" + menge + "]";      //+ new Date(2021, 3, 13).toUTCString()
 
@@ -156,8 +154,6 @@
     <br>
     <br>
     <img src="Beer.png">
-    <p></p>
-    <br><br><br><br><br><br><br><br><br><br>
 
     <meta http-equiv="refresh" content="1500"> <!--Alle 25min neu Laden wegen Server-->
 
