@@ -1,1 +1,1 @@
-'Johannes', 'Franz', 'Hans', 'Valle', 'Jana', 'Peter'
+'Johannes', 'Valle', 'Jana', 'Peter', 'Pia', 'Lisa', 'Moritz'

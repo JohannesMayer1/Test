@@ -34,8 +34,7 @@ hr {
 }
 
 .buttonBeer {
-    background: url(RitterBlau.png);
-    background-size: contain;
+
     width: 20px;
     height: 67px;
     border: 0px;
@@ -43,7 +42,40 @@ hr {
     top: 20px;
     left: -13px;
     position: relative;
-    animation: animate 0.2s linear;
+}
+
+#dev {
+    background: url(RitterBlau.png);
+    background-size: contain;
+}
+#Pfeffi {
+    background: url(Pfeffi.png);
+    background-size: contain;
+}
+
+#Jäger {
+    background: url(Jäger.png);
+    background-size: contain;
+}
+
+#Malibu {
+    background: url(Malibu.png);
+    background-size: contain;
+}
+
+#Havana {
+    background: url(Havana.png);
+    background-size: contain;
+}
+
+#Jacky {
+    background: url(Jacky.png);
+    background-size: contain;
+}
+
+#RitterRot {
+    background: url(RitterRot.png);
+    background-size: contain;
 }
 
 #AddPerson {

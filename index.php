@@ -17,9 +17,6 @@
     if(isset($_COOKIE["addName"])) {
         $file = fopen("namen.txt", "a");
         fwrite($file, $_COOKIE["addName"]);
-        echo "txt namen Cookie: ";
-        echo $_COOKIE["addName"];
-        echo "<br>";
         fclose($file);
     }
 
