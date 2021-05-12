@@ -93,9 +93,9 @@ hr {
 
 #AddPerson {
     position: absolute;
-    width: 5vh;
-    right: 1vw;
-    top: 1vw;
+    width: 39px;
+    right: 3px;
+    top: 4px;
 }
 
 #shallyLink {
@@ -104,17 +104,17 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: 6px;
+    right: 5px;
     top: 40px;
-    width: 8vw;
+    width: 31px;
 }
 
 #sidebar {
     position: absolute;
-    width: 11.5vw;
+    width: 43px;
     height: 100vh;
     background: #101010;
-    right: 11.5vw;
+    right: -43px;
     top: 0px;
 }
 
@@ -123,9 +123,10 @@ hr {
 }
 
 #Menue {
-    width:10vw;
+    width: 40px;
     position: absolute;
-    right: 11.5vw;
+    top: 5px;
+    right: 48px;
 }
 
 
