@@ -9,14 +9,14 @@
   </head>
 
   <body>
-    <img id="AddPerson" src="AddPerson.png" onclick="addNewName()">
+
 
     <h1>Wer zu viel Säuft</h1>
 
     <ul id="list">
 
     </ul>
-    
+
     <script>
       //let listNames = ['Johannes']; <--Wird mit php deklariert
       let menge = [0];
@@ -26,6 +26,7 @@
       let arrayLoaded = [];
       let laden = 0;
       let bild = "dev";
+      let web = 0;
 
       /*
       let storage = sessionStorage.getItem('menge');    Local Storage nicht mehr nötig es soll immer die neuste version von txt geladen werden.
@@ -43,6 +44,7 @@
         listNames = nameStorage.split(',');
       }
       */
+
 
       document.cookie = "addTo=";
 
@@ -169,6 +171,9 @@
         }
       }
 
+      function show() {
+        document.getElementById('sidebar').classList.toggle('active');
+      }
     </script>
 
     
@@ -180,6 +185,15 @@
     <a href="https://drv.tw" target="_blank">www.drv.tw</a>
     -->
 
+    <div id="sidebar">
+      <img id="Menue" src="Menü.png" onclick="show()">
+
+      <img id="AddPerson" src="AddPerson.png" onclick="addNewName()">
+
+      <a id="shallyLink" target="inVis" href="http://192.168.2.115/relay/0?turn=toggle">pp</a>
+      <iframe name="inVis"style="height:0px;width:0px;border:0px none red;background-color:transparent;"></iframe>
+    
+    </div>
   </body>
 
 </html>
@@ -189,5 +203,5 @@
 let nameList = [];
 let anzahl = window.prompt(listNames[person] + ' gib ein wie viel Bier:');
 
-
+https://fonts.google.com/icons
 --->

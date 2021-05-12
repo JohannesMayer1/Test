@@ -84,6 +84,13 @@ hr {
     background-repeat: no-repeat;
 }
 
+#Beer {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    max-width: 400px;
+}
+
 #AddPerson {
     position: absolute;
     width: 5vh;
@@ -91,11 +98,34 @@ hr {
     top: 1vw;
 }
 
-#Beer {
+#shallyLink {
+    color: #ffffff00;
+    background-image: url(Licht.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    left: 0px;
-    width: 100vw;
-    max-width: 400px;
+    right: 6px;
+    top: 40px;
+    width: 8vw;
+}
+
+#sidebar {
+    position: absolute;
+    width: 11.5vw;
+    height: 100vh;
+    background: #101010;
+    right: 11.5vw;
+    top: 0px;
+}
+
+#sidebar.active {
+    right: 0px;
+}
+
+#Menue {
+    width:10vw;
+    position: absolute;
+    right: 11.5vw;
 }
 
 

@@ -55,6 +55,8 @@
 
     include_once("Liste.html");
 
+    
+
     //Schreiben des Texdocuments für Zahlen (vorläufig)
    /* $file = fopen("save.txt", "w");
     fwrite($file, $_COOKIE["menge"]);
