@@ -173,6 +173,9 @@
 
       function show() {
         document.getElementById('sidebar').classList.toggle('active');
+        document.getElementById('Menue').classList.toggle('active');
+        document.getElementById('AddPerson').classList.toggle('active');
+        document.getElementById('shallyLink').classList.toggle('active');
       }
     </script>
 
@@ -184,10 +187,10 @@
     <!--
     <a href="https://drv.tw" target="_blank">www.drv.tw</a>
     -->
+    
+    <img id="Menue" src="Menü.png" onclick="show()">
 
-    <div id="sidebar">
-      <img id="Menue" src="Menü.png" onclick="show()">
-
+    <div id="sidebar" onclick="show()">
       <img id="AddPerson" src="AddPerson.png" onclick="addNewName()">
 
       <a id="shallyLink" target="inVis" href="http://192.168.2.115/relay/0?turn=toggle">pp</a>

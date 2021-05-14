@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     font-size: 31px;
     line-height: 55px;
     margin-top: 0px;
+    margin-right: 0px;
 }
 
 h1 {
@@ -26,10 +28,10 @@ hr {
     margin-bottom: 0px;
     position: relative;
     top: 12px;
-    left: -8vw;
+    left: -30px;
     border: none;
     height: 1px;
-    width: 96vw;
+    width: 100vw;
     background: #606060;
 }
 
@@ -96,38 +98,57 @@ hr {
     width: 39px;
     right: 3px;
     top: 4px;
+    visibility: hidden;
+}
+
+#AddPerson.active {
+    visibility: visible;
 }
 
 #shallyLink {
     color: #ffffff00;
-    background-image: url(Licht.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     right: 5px;
     top: 40px;
     width: 31px;
+    transition: .4s;
+}
+
+#shallyLink.active {
+    background-image: url(Licht.png);
 }
 
 #sidebar {
     position: absolute;
     width: 43px;
     height: 100vh;
-    background: #101010;
-    right: -43px;
+    background: #10101000;
+    right: 0px;
     top: 0px;
+    visibility: hidden;
+    transition: .4s;
 }
 
 #sidebar.active {
-    right: 0px;
+    visibility: visible;
+    background: #101010;
+}
+
+#Menue.active {
+    visibility: hidden;
+    right: 100px;
 }
 
 #Menue {
     width: 40px;
     position: absolute;
     top: 5px;
-    right: 48px;
+    right: 5px;
+    visibility: visible;
 }
+
 
 
 @keyframes animate {
